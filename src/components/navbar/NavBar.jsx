@@ -11,8 +11,7 @@ export const NavBar = () => {
   );
 };
 
-const LinkItem = (props) => {
-    const { to, name } = props;
+const LinkItem = ({to, name}) => {
     return (
         <div className="link-container">
             <Link className="link" to={to}>{name}</Link>
