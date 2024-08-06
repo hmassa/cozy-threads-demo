@@ -12,10 +12,10 @@ function App() {
                 <Header />
                 <NavBar />
                 <Routes>
-                    <Route path="/" element={<Catalog category={"all"}/>} />
-                    <Route path="/men" element={<Catalog category={"mens"}/>} />
-                    <Route path="/women" element={<Catalog category={"womens"}/>}/>
-                    <Route path="/accessories" element={<Catalog category={"accessories"}/>} />
+                    <Route path="/" element={<Catalog category={"all"} title={"All Items"}/>} />
+                    <Route path="/men" element={<Catalog category={"mens"} title={"Men's Apparel"}/>} />
+                    <Route path="/women" element={<Catalog category={"womens"} title="Women's Apparel"/>}/>
+                    <Route path="/accessories" element={<Catalog category={"accessories"} title={"Accessories"}/>} />
                     <Route path="/cart" element={<Cart />} />
                 </Routes>
             </Router>

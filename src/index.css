@@ -3,10 +3,11 @@
 :root {
     --primary-color: #489e8c;
     --secondary-color: #eee;
+    --main-font: 'Poiret One', sans-serif;
 }
 
 #title {
-    font-family: 'Poiret One', sans-serif;
+    font-family: var(--main-font);
     font-size: 4em;
     font-weight: bold;
     color: var(--primary-color);

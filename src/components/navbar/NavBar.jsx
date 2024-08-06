@@ -7,6 +7,7 @@ export const NavBar = () => {
         <LinkItem to="men" name="MEN'S APPAREL" />
         <LinkItem to="women" name="WOMEN'S APPAREL" />
         <LinkItem to="accessories" name="ACCESSORIES" />
+        <LinkItem to="" name="ALL" />
     </nav>
   );
 };
