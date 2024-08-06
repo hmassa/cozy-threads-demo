@@ -1,0 +1,14 @@
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 4em;
+}
