@@ -13,3 +13,9 @@
 #logo {
     width: 4em;
 }
+
+#cart {
+    font-size: large;
+    display: flex;
+    align-items: center;
+}

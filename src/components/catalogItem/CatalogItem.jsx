@@ -4,11 +4,14 @@ import CloseIcon from "@mui/icons-material/Close";
 
 import "./CatalogItem.css";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addItem } from '../../redux/cartSlice'
 
 export const CatalogItem = (props) => {
     const { image, title, description, price } = props;
     const [modalOpen, setModalOpen] = useState(false);
     const [addedToCart, setAddedToCart] = useState(false);
+    const dispatch  = useDispatch();
 
     const openDetails = () => {
         setAddedToCart(false);
@@ -17,7 +20,7 @@ export const CatalogItem = (props) => {
     const closeDetails = () => setModalOpen(false);
 
     const addToCart = () => {
-        console.log(props);
+        dispatch(addItem(props));
         setAddedToCart(true);
     };
 
