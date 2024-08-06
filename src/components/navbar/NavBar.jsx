@@ -7,12 +7,12 @@ export const NavBar = () => {
         <LinkItem to="men" name="MEN'S APPAREL" />
         <LinkItem to="women" name="WOMEN'S APPAREL" />
         <LinkItem to="accessories" name="ACCESSORIES" />
+        <LinkItem to="" name="ALL" />
     </nav>
   );
 };
 
-const LinkItem = (props) => {
-    const { to, name } = props;
+const LinkItem = ({to, name}) => {
     return (
         <div className="link-container">
             <Link className="link" to={to}>{name}</Link>

@@ -1,7 +1,10 @@
 import { ShoppingCart } from "@mui/icons-material";
+import { useSelector } from "react-redux";
+import { selectCartCount } from "../../redux/cartSlice";
 import "./Header.css";
 
 export const Header = () => {
+  const cartCount = useSelector(selectCartCount);
   return (
     <header>
       <div id="header-container">
@@ -9,7 +12,10 @@ export const Header = () => {
           <img id="logo" src="/logo.png" alt="Cozy Threads logo" />
           <span id="title">cozy threads</span>
         </div>
-        <ShoppingCart fontSize="large" />
+        <div id="cart">
+          <span>{cartCount}</span>
+          <ShoppingCart fontSize="large" />
+        </div>
       </div>
     </header>
   );
