@@ -4,6 +4,15 @@
     margin: auto;
 }
 
-.checkout-button {
+.checkout-section {
     text-align: center;
+    margin: 2em 0;
+}
+
+.checkout-section > p {
+    font-size: large;
+}
+
+.checkout-section > button {
+    margin: 0;
 }

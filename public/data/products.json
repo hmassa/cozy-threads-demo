@@ -6,7 +6,7 @@
             "image": "/data/images/womens-sweater.webp",
             "title": "Olive Green Cabled Crewneck",
             "description": "A textured diamond pattern lends character to a cotton crewneck sweater knit with unexpected wide sleeves.",
-            "price": "75"
+            "price": 75
         },
         {
             "id": "002",
@@ -14,7 +14,7 @@
             "image": "/data/images/womens-jeans.webp",
             "title": "Flare Jeans",
             "description": "Fitted through the waist and flared at the legs, these stretchy, full-length jeans have sleek center pintucks and welt pockets for an updated look.",
-            "price": "108"
+            "price": 108
         },
         {
             "id": "003",
@@ -22,7 +22,7 @@
             "image": "/data/images/skirt.webp",
             "title": "Pleated Midi Skirt",
             "description": "An elastic waist tops this flowy midi-length skirt accented with a layered design, asymmetric hem and easy-moving pleats.",
-            "price": "50"
+            "price": 50
         },
         {
             "id": "004",
@@ -30,7 +30,7 @@
             "image": "/data/images/dress.webp",
             "title": "Floral Midi Dress",
             "description": "Prairie style goes contemporary on this floral midi with a button-up bodice, a drawstring waist and a ruffle-tiered skirt interrupted by a front slit.",
-            "price": "89"
+            "price": 89
         },
         {
             "id": "005",
@@ -38,7 +38,7 @@
             "image": "/data/images/mens-tshirt.webp",
             "title": "Olive Green Cotton T-Shirt",
             "description": "A laid-back slub-knit T-shirt is made of organic cotton and washed for amazing softness.",
-            "price": "35"
+            "price": 35
         },
         {
             "id": "006",
@@ -46,7 +46,7 @@
             "image": "/data/images/mens-jeans.webp",
             "title": "Straight Leg Jeans",
             "description": "Tried-and-true straight-leg jeans in a versatile wash are made from soft, shape-retaining stretch denim to move with you from day to night.",
-            "price": "99"
+            "price": 99
         },
         {
             "id": "007",
@@ -54,7 +54,7 @@
             "image": "/data/images/mens-sweater.webp",
             "title": "Gray Crewneck Sweater",
             "description": "Luxuriously soft and endlessly versatile, this crewneck sweater is knit from soft cashmere yarns you'll appreciate from the work week to the weekend.",
-            "price": "62"
+            "price": 62
         },
         {
             "id": "008",
@@ -62,7 +62,7 @@
             "image": "/data/images/dress-shirt.webp",
             "title": "White Dress Shirt",
             "description": "Stay comfy as you transition from office hours to happy hour in a streamlined button-up cut from a fresh cotton blend enriched with moisture-wicking fibers.",
-            "price": "65"
+            "price": 65
         },
         {
             "id": "009",
@@ -70,7 +70,7 @@
             "image": "/data/images/bag.webp",
             "title": "Faux Leather Laptop Bag",
             "description": "Conquer your KPIs from anywhere with the Laptop Bag.",
-            "price": "148"
+            "price": 148
         },
         {
             "id": "010",
@@ -78,7 +78,7 @@
             "image": "/data/images/belt.webp",
             "title": "Leather Belt",
             "description": "Burnished leather with a sophisticated patina elevates this Italian-crafted belt finished with a square buckle.",
-            "price": "42"
+            "price": 42
         },
         {
             "id": "011",
@@ -86,7 +86,7 @@
             "image": "/data/images/sunglasses.webp",
             "title": "Sunglasses",
             "description": "Signature T-hardware details the temples of these Italian-made sunglasses designed with a keyhole bridge that brings retro appeal.",
-            "price": "155"
+            "price": 155
         }
     ]
 }
