@@ -1,0 +1,14 @@
+.cart-card {
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.cart-image {
+    height: min(200px, 40vh);
+}
+
+.cart-item-details {
+    padding: 2em;
+}
