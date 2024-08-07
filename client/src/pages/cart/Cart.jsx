@@ -22,7 +22,10 @@ export const Cart = () => {
                     </div>
                     <div className="checkout-section">
                         <p>Total: ${totalCost}</p>
-                        <button type="button">{"Checkout with Stripe"}</button>
+                        <form action="http://localhost:4242/create-checkout-session" method="POST">
+                            <input name="items" id="items" value={JSON.stringify(cartContents)} type="hidden"/>
+                            <button type="submit">Checkout with Stripe</button>
+                        </form>
                     </div>
                 </>
             ) : (
