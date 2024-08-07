@@ -57,7 +57,6 @@ export const CatalogItem = (props) => {
                             </button>
                         ) : (
                             <button
-                                className="add-to-cart-button"
                                 type="button"
                                 onClick={addToCart}
                             >
