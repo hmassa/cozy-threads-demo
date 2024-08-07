@@ -23,7 +23,7 @@ export const Cart = () => {
                     <div className="checkout-section">
                         <p>Total: ${totalCost}</p>
                         <form
-                            action="http://localhost:4242/create-checkout-session"
+                            action="/create-checkout-session"
                             method="POST"
                         >
                             <input
