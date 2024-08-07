@@ -7,9 +7,9 @@ import { useMemo } from "react";
 export const Cart = () => {
     const cartContents = useSelector(selectCartContents);
     const totalCost = useMemo(() => {
-        return cartContents.reduce((acc, item) => acc + item.price, 0)
+        return cartContents.reduce((acc, item) => acc + item.price, 0);
     }, [cartContents]);
-    
+
     return (
         <div className="cart-container">
             <h2>{"My Cart"}</h2>
@@ -22,8 +22,16 @@ export const Cart = () => {
                     </div>
                     <div className="checkout-section">
                         <p>Total: ${totalCost}</p>
-                        <form action="http://localhost:4242/create-checkout-session" method="POST">
-                            <input name="items" id="items" value={JSON.stringify(cartContents)} type="hidden"/>
+                        <form
+                            action="http://localhost:4242/create-checkout-session"
+                            method="POST"
+                        >
+                            <input
+                                name="items"
+                                id="items"
+                                value={JSON.stringify(cartContents)}
+                                type="hidden"
+                            />
                             <button type="submit">Checkout with Stripe</button>
                         </form>
                     </div>

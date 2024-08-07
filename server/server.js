@@ -9,7 +9,7 @@ const DOMAIN = process.env.DOMAIN;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.post("/create-checkout-session", async (req, res) => {
-    const items = JSON.parse(req.body.items)
+    const items = JSON.parse(req.body.items);
     const itemsToCount = {};
     items.forEach((item) => {
         itemsToCount[item.id] != null
@@ -27,8 +27,8 @@ app.post("/create-checkout-session", async (req, res) => {
     const session = await stripe.checkout.sessions.create({
         line_items: lineItems,
         mode: "payment",
-        success_url: `${DOMAIN}?success=true`,
-        cancel_url: `${DOMAIN}?canceled=true`,
+        success_url: `${DOMAIN}/success`,
+        cancel_url: `${DOMAIN}/cancelled`,
     });
 
     res.redirect(303, session.url);
