@@ -2,7 +2,6 @@
     "name": "cozy-threads-demo",
     "version": "0.1.0",
     "private": true,
-    "proxy": "https://cozy-threads-api.vercel.app/",
     "dependencies": {
         "@emotion/react": "^11.13.0",
         "@emotion/styled": "^11.13.0",
