@@ -9,6 +9,10 @@ export const Cart = () => {
     const totalCost = useMemo(() => {
         return cartContents.reduce((acc, item) => acc + item.price, 0);
     }, [cartContents]);
+    const baseUrl =
+        process.env.NODE_ENV === "production"
+            ? "https://cozy-threads-api.vercel.app/"
+            : "http://localhost:4242";
 
     return (
         <div className="cart-container">
@@ -23,7 +27,7 @@ export const Cart = () => {
                     <div className="checkout-section">
                         <p>Total: ${totalCost}</p>
                         <form
-                            action="/create-checkout-session"
+                            action={baseUrl + "/create-checkout-session"}
                             method="POST"
                         >
                             <input
